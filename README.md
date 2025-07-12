@@ -13,6 +13,12 @@ This project was developed as part of the Oddo Hackathon.
 
 ## Features
 
+### Public Features
+- **Landing Page**: Public discovery of users without registration
+- **Browse Users**: View public profiles and skills without logging in
+- **Search & Filter**: Find users by skills or names
+- **Call-to-Action**: Encourages signup for full functionality
+
 ### User Features
 - **User Profile Management**: Create and manage profiles with skills offered/wanted
 - **Skill Discovery**: Browse and search users by skills
@@ -25,6 +31,7 @@ This project was developed as part of the Oddo Hackathon.
 - **Swap Monitoring**: Monitor all swap requests
 - **Statistics**: View platform statistics
 - **Data Export**: Export user and swap data as CSV
+- **Privacy Protection**: Admin accounts are hidden from public discovery
 
 ## Tech Stack
 
@@ -175,6 +182,7 @@ This project was developed as part of the Oddo Hackathon.
 - **Input Validation**: express-validator for request validation
 - **CORS**: Configured for cross-origin requests
 - **Admin Authorization**: Protected admin routes
+- **Admin Privacy**: Admin accounts hidden from public discovery
 
 ## Styling
 

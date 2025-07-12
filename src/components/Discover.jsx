@@ -1,6 +1,32 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Discover = ({ user }) => {
+  // If no user, redirect to login
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <div className="max-w-md w-full">
+          <div className="card text-center">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Sign In Required
+            </h2>
+            <p className="text-gray-600 mb-6">
+              You need to be signed in to discover and connect with other users.
+            </p>
+            <div className="space-y-3">
+              <Link to="/login" className="btn btn-primary w-full">
+                Sign In
+              </Link>
+              <Link to="/register" className="btn btn-secondary w-full">
+                Create Account
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');

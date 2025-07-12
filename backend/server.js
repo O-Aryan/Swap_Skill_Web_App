@@ -11,6 +11,7 @@ import userRoutes from './routes/users.js';
 import swapRoutes from './routes/swaps.js';
 import ratingRoutes from './routes/ratings.js';
 import adminRoutes from './routes/admin.js';
+import publicRoutes from './routes/public.js';
 
 // Load environment variables
 dotenv.config({ path: './config.env' });
@@ -35,6 +36,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/swaps', swapRoutes);
 app.use('/api/ratings', ratingRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/public', publicRoutes);
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
