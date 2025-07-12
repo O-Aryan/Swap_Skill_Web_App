@@ -245,7 +245,7 @@ const LandingPage = () => {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-300">
-            © 2024 Skill Swap Platform. Built for the Oddo Hackathon.
+            Skill Swap Platform. Built for the Oddo Hackathon.
           </p>
         </div>
       </footer>
