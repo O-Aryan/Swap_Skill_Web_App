@@ -124,7 +124,7 @@ const LandingPage = () => {
                     value={selectedSkill}
                     onChange={(e) => setSelectedSkill(e.target.value)}
                     className="form-input"
-                    placeholder="e.g., Photoshop, Excel"
+                    placeholder="e.g., JavaScript, Python"
                   />
                 </div>
               </div>
