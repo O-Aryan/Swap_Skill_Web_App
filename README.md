@@ -11,6 +11,9 @@ A minimal platform where users can trade skills with each other. Built with Reac
 ## Oddo Hackathon
 This project was developed as part of the Oddo Hackathon.
 
+## Video Link
+https://drive.google.com/file/d/1zk2k2n25zNZPOWgFI_KUat9MDYQn23hO/view?usp=sharing
+
 ## Features
 
 ### User Features
