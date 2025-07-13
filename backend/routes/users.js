@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/discover', auth, async (req, res) => {
   try {
     const { skill, search } = req.query;
-    let query = { isPublic: true, isBanned: false, _id: { $ne: req.user._id } };
+    let query = { isPublic: true, isBanned: false, isAdmin: { $ne: true }, _id: { $ne: req.user._id } };
 
     if (skill) {
       query.$or = [

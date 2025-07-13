@@ -40,6 +40,7 @@ const promoteToAdmin = async (email, secretKey) => {
 
     console.log(`✅ Successfully promoted "${user.name}" (${email}) to admin!`);
     console.log('You can now log in and access the admin panel.');
+    console.log('Note: Admin users are hidden from public discovery for security.');
 
   } catch (error) {
     console.error('❌ Error:', error.message);
